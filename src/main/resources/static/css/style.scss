@@ -1,0 +1,105 @@
+@import "variables";
+@import "reset";
+
+.header_btn {
+
+  width: 100%;
+  height: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr 0.3fr;
+  font-size: $fontsize;
+
+  .btn {
+    border-bottom: 0.5px solid $btn_stroke;
+    border-right: 0.5px solid $btn_stroke;
+    text-align: center;
+    padding: 29px 0;
+  }
+
+  #logo_btn {
+    background-color: $main_red;
+    background-image: url("../img/logo_nintendo_red.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  #download_btn {
+    background-color: $main_orange;
+    background-image: url("../img/btn_head_eshop.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.main_img_box {
+  overflow: hidden;
+  ul {
+    width:calc(100% * 8);
+    display: flex;
+    animation: slide 64s infinite;
+    li {
+      width: calc(100% / 8);
+      height: auto;
+      .pc_img {
+        width: 100%;
+      }
+    }
+  }
+}
+.nav_btn {
+  padding-top: 8px;
+  width: fit-content;
+  margin: 0 auto;
+  .prev {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 20px;
+    #prev_btn {
+      width: 40px;
+    }
+  }
+  p {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 3px;
+    font-size: 22px;
+    font-weight: bold;
+    float: left;
+  }
+  .next {
+    display: block;
+    overflow: hidden;
+    width: 20px;
+    #next_btn {
+      position: relative;
+      left: -20px;
+      width: 40px;
+    }
+  }
+}
+
+
+@keyframes slide {
+  0% {margin-left: 0;}
+  5% {margin-left: 0;}
+  10% {margin-left:-100%;}
+  15% {margin-left:-100%;}
+  20% {margin-left:-200%;}
+  25% {margin-left:-200%;}
+  30% {margin-left:-300%;}
+  35% {margin-left:-300%;}
+  40% {margin-left:-400%;}
+  45% {margin-left:-400%;}
+  50% {margin-left:-500%;}
+  55% {margin-left:-500%;}
+  60% {margin-left:-600%;}
+  65% {margin-left:-600%;}
+  70% {margin-left:-700%;}
+  75% {margin-left:-700%;}
+  80% {margin-left:-800%;}
+  85% {margin-left:-800%;}
+  90% {margin-left:-900%;}
+  95% {margin-left:-900%;}
+  100% {margin-left:0%;}
+}
