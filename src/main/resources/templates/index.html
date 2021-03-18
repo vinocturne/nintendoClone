@@ -8,7 +8,7 @@
     <script>
     $(document).ready(function() {
         $('.prev').on('click', function() {
-            $('#img_slider').animate({marginLeft:'100%'});
+            var imgOn = $("ul").find(".")
         });
     });
     </script>
@@ -46,6 +46,22 @@
             </p>
             <div class="next">
                 <img id="next_btn" src="../static/img/main_slide_btn.png">
+            </div>
+        </div>
+        <div class="news_list">
+            <div class="main_title">
+                <h3>새롭게 알려드립니다</h3>
+                <div class="desc">News & Update</div>
+                <img src="../static/img/icon_more.png">
+            </div>
+            <div class="main_card_board">
+                <div class="news_item">
+                    <img src="../static/img/card_board/1.jpg">
+                    <div class="category">뉴스</div>
+                    <div class="news_title">『모여봐요 동물의 숲』 무료 업데이트는 3월 18일 배포.</div>
+                    <div class="news_date">2021.03.17</div>
+                    <div class="consoleName">Nintendo Switch</div>
+                </div>
             </div>
         </div>
     </div>
